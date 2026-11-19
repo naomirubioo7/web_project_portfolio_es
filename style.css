@@ -1,0 +1,38 @@
+@font-face {
+  font-family: "ArchivoBlack";
+  src: url("./fonts/ArchivoBlack-Regular.woff") format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("./fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+}
+h1,
+h2 {
+  font-family: "ArchivoBlack";
+}
+body {
+  font-family: "OpenSans";
+  background-color: #1e1e1e;
+}
+.profile__name {
+  font-size: 72px;
+  color: #ffffff;
+}
+.profile__developer {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.profile__details {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.profile__link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
