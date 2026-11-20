@@ -1,0 +1,60 @@
+.profile__name {
+  font-family: "ArchivoBlack";
+  font-style: normal;
+  font-size: 72px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.profile__developer {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.profile__details {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.profile__links {
+  display: flex;
+  gap: 30px;
+}
+
+.profile__link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.profile__link--cv {
+  width: 115px;
+}
+.profile__link--github {
+  width: 138px;
+}
+.profile__link--contact {
+  width: 88px;
+}
+.skills__title {
+  width: 603px;
+}
+.skills__list {
+  width: 1100px;
+}
+
+@media screen and (max-width: 1023px) {
+  .profile__name {
+    font-size: 58px;
+    width: 423px;
+  }
+  .profile__developer {
+    width: 452px;
+  }
+  .profile__details {
+    width: 452px;
+  }
+
+  .skills__list {
+    width: 590px;
+  }
+}
