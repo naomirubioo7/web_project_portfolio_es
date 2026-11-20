@@ -1,0 +1,8 @@
+.page {
+  max-width: 1023px;
+  min-width: 767px;
+  margin: auto;
+  background-color: #1e1e1e;
+  font-family: "OpenSans";
+  color: white;
+}

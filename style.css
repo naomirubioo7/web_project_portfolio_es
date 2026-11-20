@@ -36,3 +36,34 @@ body {
   font-weight: 600;
   color: #ffffff;
 }
+
+@media screen and (max-width: 1023px) {
+  .profile__name {
+    font-size: 58px;
+    width: 423px;
+  }
+  .profile__developer {
+    width: 452px;
+  }
+  .profile__details {
+    width: 452px;
+  }
+
+  .profile__link--cv {
+    width: 115px;
+  }
+  .profile__link--github {
+    width: 138px;
+  }
+  .profile__link--contact {
+    width: 88px;
+  }
+  .skills__title {
+    width: 603px;
+  }
+  .skills__list {
+    width: 50px;
+  }
+}
+@media screen and (max-width: 767px) {
+}
