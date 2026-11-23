@@ -1,0 +1,38 @@
+.footer__contact {
+  font-family: "ArchivoBlack";
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  width: 201px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer__email {
+  font-family: OpenSans;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer__email a {
+  color: #6d6dff;
+}
+.footer__socialmedia {
+  display: flex;
+  gap: 80px;
+  list-style: none;
+  justify-content: center;
+}
+@media screen and (max-width: 1023px) {
+}
+
+@media screen and (max-width: 767px) {
+  .footer__contact {
+    font-size: 28px;
+    width: 141px;
+  }
+  .footer__socialmedia {
+    gap: 40px;
+  }
+}

@@ -8,10 +8,7 @@
   src: url("./fonts/OpenSans-Regular.woff") format("woff");
   font-weight: 400;
 }
-h1,
-h2 {
-  font-family: "ArchivoBlack";
-}
+
 body {
   font-family: "OpenSans";
   background-color: #1e1e1e;

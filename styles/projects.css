@@ -1,11 +1,25 @@
+.projects{
 
-.projects__title{
+}
 
+.projects__title {
+font-family: "ArchivoBlack";
+  font-style: normal;
+  font-size: 40px;
+  font-weight: 400;
+  color: #ffffff;
+  width: 487px;
+}
+.projects__list {
+display: flex;
+gap: 20px;
 }
 .projects__card{
 
 }
 .projec__img{
+width: 590px;
+height: 330px;
 
 }
 .projects__card-title{
