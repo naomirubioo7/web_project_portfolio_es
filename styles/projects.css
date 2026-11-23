@@ -1,5 +1,5 @@
 .projects{
-
+ margin-bottom: 100px;
 }
 
 .projects__title {
@@ -8,16 +8,20 @@ font-family: "ArchivoBlack";
   font-size: 40px;
   font-weight: 400;
   color: #ffffff;
-  width: 487px;
 }
 .projects__list {
 display: flex;
 gap: 20px;
 }
 .projects__card{
+  background-color: #1c1c1c;
+  width: 590px;
+  height: 670px;
+  gap: 20px;
+ 
 
 }
-.projec__img{
+.projects__img{
 width: 590px;
 height: 330px;
 
@@ -29,11 +33,6 @@ height: 330px;
 .projects__description{
 
 }
-
-
-
-
-
 
 
 
