@@ -26,23 +26,30 @@
 .profile__links {
   display: flex;
   gap: 30px;
-  width: 198px;
 }
 
 .profile__link {
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient (to right, purple, darkblue, blue);
+  background-size: 115% 5px;
+  background-repeat: no-repeat;
+  background-position: bottom;
 }
 
 .profile__link--cv {
   width: 115px;
+  text-decoration: none;
 }
 .profile__link--github {
   width: 138px;
+  text-decoration: none;
 }
 .profile__link--contact {
   width: 88px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1023px) {
