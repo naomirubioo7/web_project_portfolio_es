@@ -1,64 +1,72 @@
-.projects{
- margin-bottom: 100px;
+.projects {
+  margin-bottom: 100px;
 }
 
 .projects__title {
-font-family: "ArchivoBlack";
+  font-family: "ArchivoBlack";
   font-style: normal;
   font-size: 40px;
   font-weight: 400;
   color: #ffffff;
 }
 .projects__list {
-display: flex;
-gap: 20px;
-flex-wrap: wrap;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
-.projects__card{
+.projects__card {
   background-color: #1c1c1c;
-  width: calc((100% - 20px) / 2 );
+  width: calc((100% - 20px) / 2);
   height: 670px;
   gap: 20px;
- display: flex; 
- flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .card__img {
   background-image: url(../images/cafeteria.svg);
   height: 330px;
-width: 100%;
-background-size: cover;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
-.card__imgproyect{
+.card__imgproyect {
   background-image: url(../images/miproyecto.svg);
   height: 330px;
-width: 100%;
-background-size: cover;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+.projects__icon {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.projects__card-title {
 }
 
-.projects__card-title{
-
+.projects__description {
 }
-
-.projects__description{
-
+.projects__links {
 }
-.projects__links{}
-.projects__link{
-margin-top: auto;
+.projects__link {
+  margin-top: auto;
   display: flex;
   gap: 5px;
 }
-
-
-.projects__link-img{
-
+.projects__mediacontainer {
+  position: relative;
 }
-.card__content{
+
+.projects__link-img {
+}
+.card__content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 1023px) {
- 
+}
+
 @media screen and (max-width: 767px) {
+}
