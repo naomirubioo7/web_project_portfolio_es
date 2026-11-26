@@ -41,7 +41,7 @@
   bottom: 10px;
   left: 10px;
 }
-.projects__card-title {
+.projects__card-title {s
 }
 
 .projects__description {
@@ -58,10 +58,12 @@
 }
 
 .projects__link-img {
+  margin-left: 20px;
 }
 .card__content {
   display: flex;
   flex-direction: column;
+  flex: 1;
   justify-content: space-between;
 }
 
