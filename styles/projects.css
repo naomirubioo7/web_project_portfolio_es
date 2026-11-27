@@ -3,7 +3,7 @@
 }
 
 .projects__title {
-  font-family: "ArchivoBlack";
+  font-family: "ArchivoBlack", "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-size: 40px;
   font-weight: 400;
@@ -43,7 +43,7 @@
 }
 
 .projects__description {
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
@@ -51,6 +51,20 @@
   margin-top: auto;
   display: flex;
   gap: 5px;
+  color: inherit;
+  opacity: 0.55;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.projects__link:hover,
+.projects__link:focus-visible {
+  color: #6d6dff;
+  opacity: 1;
+  transform: translateY(-1px);
 }
 .projects__mediacontainer {
   position: relative;
@@ -67,12 +81,12 @@
 }
 
 .projects__card-title {
-  font-family: "OpenSans";
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 24px;
   font-weight: 700;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.98px) {
   .projects__list {
     justify-content: center;
   }
@@ -112,7 +126,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .projects {
     margin-bottom: 40px;
     padding: 0 16px;
@@ -143,5 +157,11 @@
 
   .projects__icon img {
     width: 30px;
+  }
+}
+
+@media (hover: none) {
+  .projects__link {
+    opacity: 1;
   }
 }

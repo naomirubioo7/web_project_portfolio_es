@@ -6,7 +6,7 @@
 }
 
 .footer__contact {
-  font-family: "ArchivoBlack";
+  font-family: "ArchivoBlack", "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-size: 40px;
   font-weight: 400;
@@ -16,7 +16,7 @@
 }
 
 .footer__email {
-  font-family: OpenSans;
+  font-family: "OpenSans", Arial, sans-serif;
   font-size: 18px;
   text-align: center;
   margin: 0 0 24px;
@@ -24,7 +24,19 @@
 
 .footer__email a {
   color: #6d6dff;
+  opacity: 0.55;
+  text-decoration: none;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease;
 }
+
+.footer__email a:hover,
+.footer__email a:focus-visible {
+  color: #a4a4ff;
+  opacity: 1;
+}
+
 .footer__socialmedia {
   display: flex;
   gap: 80px;
@@ -38,11 +50,28 @@
   display: block;
   width: 24px;
   height: 24px;
-}
-@media screen and (max-width: 1023px) {
+  opacity: 0.55;
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease;
 }
 
-@media screen and (max-width: 767px) {
+.footer__socialmedia-item:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (hover: none) {
+  .footer__email a,
+  .footer__socialmedia-item img {
+    opacity: 1;
+  }
+
+  .footer__socialmedia-item:hover img {
+    transform: none;
+  }
+}
+@media screen and (max-width: 767.98px) {
   .footer {
     padding: 28px 16px 85px;
   }

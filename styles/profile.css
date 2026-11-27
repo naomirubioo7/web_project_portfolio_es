@@ -1,5 +1,5 @@
 .profile__name {
-  font-family: "ArchivoBlack";
+  font-family: "ArchivoBlack", "Arial Black", Arial, sans-serif;
   font-style: normal;
   font-size: 72px;
   font-weight: 400;
@@ -32,11 +32,23 @@
   font-size: 18px;
   font-weight: 600;
   color: #ffffff;
+  opacity: 0.55;
   text-decoration: none;
   background: linear-gradient(to right, purple, darkblue, blue);
   background-size: 115% 5px;
   background-repeat: no-repeat;
   background-position: bottom;
+  transition:
+    color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+.profile__link:hover,
+.profile__link:focus-visible {
+  color: #ffffff;
+  opacity: 1;
+  transform: translateY(-1px);
 }
 
 .profile__link--cv {
@@ -52,7 +64,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1023.98px) {
   .profile__name {
     font-size: 58px;
     width: 423px;
@@ -69,25 +81,46 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023.98px) {
   .profile {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 216px;
+    grid-template-areas:
+      "name image"
+      "developer image"
+      "details image"
+      "links image";
+    column-gap: 20px;
     padding: 0 40px;
   }
 
+  .profile__name {
+    grid-area: name;
+  }
+
   .profile__image {
+    grid-area: image;
     display: block;
-    float: right;
-    margin-top: -117px;
-    margin-left: 20px;
+    align-self: start;
+    margin: 0;
     object-fit: cover;
   }
 
+  .profile__developer {
+    grid-area: developer;
+  }
+
   .profile__details {
+    grid-area: details;
     width: 100%;
+  }
+
+  .profile__links {
+    grid-area: links;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .profile {
     display: flex;
     flex-direction: column;
@@ -108,7 +141,6 @@
   .profile__image {
     order: -1;
     display: block;
-    float: none;
     width: 100%;
     max-width: 280px;
     height: auto;
@@ -140,5 +172,11 @@
 
   .profile__link {
     font-size: 14px;
+  }
+}
+
+@media (hover: none) {
+  .profile__link {
+    opacity: 1;
   }
 }
